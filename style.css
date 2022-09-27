@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background: url(./images/bg-main-desktop.png);
+background-attachment: fixed;
+background-repeat: no-repeat;
+width: 100vh;
+height: 100vh;
+font-size: 0.7rem;
+font-weight: 700;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.card-front, .card-back{
+    width: 400px;
+}
+.card-front{
+    margin-left: 130px;
+    
+}
+.logo{
+    position: absolute;
+    left: 185px;
+    top: 80px;
+}
+.card-one-num{
+    color: white;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    font-size: 1.50rem;
+}
+.card-details{
+    display: flex;
+    gap: 162px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-date{
+    display: flex;
+    margin-top: 7px;
+}
+.card-back{
+    margin-left: 15rem;
+    margin-top: 1.80rem;
+    
+}
+.card-two-num{
+    position: absolute;
+    left: 600px;
+    top: 400px;
+    color:white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.sec-one{
+    padding: 30px; 
+    margin-top: 30px;
+}
+#sec-two{
+   margin-top: 12rem; 
+   margin-left: 3rem;
+   text-transform: uppercase;
+   display: block;
+}
+.name, .number {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin-top: 5px;
+    opacity: 50%;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+.number, p{
+    margin-top: 8px;
+}
+.month, .year{
+    width: 80px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0.3px solid gray;
+    opacity: 50%;
+}
+.cvc{
+    width: 120px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0.3px solid gray;
+    opacity: 50%;
+}
+.btn{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin-top: 15px;
+    background: rgb(43, 6, 43);
+    color: white;
+    cursor: pointer;
+}
+.btn-two{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin-top: 15px;
+    background: rgb(43, 6, 43);
+    color: white;
+    cursor: pointer;
+    margin-left: -70px;
+}
+#confirmation-page{ 
+position: absolute;
+top: 40%;
+left: 75%;
+display: none;
+transition: transform 0.4s, top 0.4s;
+}
+
+.input-name, .input-number ,.input-month,.input-year, .input-cvc{
+    color: red;
+    font-size: 0.7rem;
+    text-transform: lowercase;
+}
+@media (max-width:600px) {
+    body{
+    background:url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 600px;
+        width: max-content;
+        height: 100vh;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .container{
+       display: block;
+       position: relative;
+       top: 0;
+       left: 0;
+    }
+    .card-back, .card-front{
+        width: 350px;
+    }
+    .card-front{
+        position: relative;
+        top:200px;
+        margin-left: -10px;
+    }
+    .card-back{
+        margin-top: -140px;
+        margin-left: 65px;
+    }
+    .logo{
+        position: absolute;
+        margin-top: 155px;
+        margin-left: -160px;
+    }
+    .card-two-num{
+        margin-top: -230px;
+        margin-left: -212px;  
+    }
+    .card-num{
+        margin-right: 180px;
+    }
+    #confirmation-page{
+        margin-top: 380px;
+        left: 30%;
+    }
+    .date{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
